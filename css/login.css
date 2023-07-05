@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container{
+  width: 70%;
+  height: 700px;
+  border: 1px solid red;
+}
+
+.container .box_grid{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+
+.container .box_grid .box_img_phones{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/home-phones.png');
+  background-repeat: no-repeat;
+  background-size: 550px;
+  background-position-x: right;
+}
+
+.container .box_grid .box_img_phones .position_box_screen{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container .box_grid .box_img_phones .position_box_screen .box_img_screenshots{
+  position: relative;
+  width: 300px;
+  height: 638px;
+  margin-right: 65px;
+}
+
+
+.container .box_grid .box_img_phones .position_box_screen .box_img_screenshots img{
+  position: absolute;
+  right: 0;
+  width: 300px;
+  height: 645px;
+  object-fit: cover;
+}
+
+.container .box_grid .box_img_phones .position_box_screen .box_img_screenshots img.screen_one{
+  animation: photo_one 6s linear infinite;
+}
+
+.container .box_grid .box_img_phones .position_box_screen .box_img_screenshots img.screen_two{
+  animation: photo_two 6s linear infinite;
+}
+
+.container .box_grid .box_img_phones .position_box_screen .box_img_screenshots img.screen_three{
+  animation: photo_three 6s linear infinite;
+
+}
+
+.container .box_grid .box_img_phones .position_box_screen .box_img_screenshots img.screen_four{
+  animation: photo_four 6s linear infinite;
+}
+
+
+@keyframes photo_one {
+  0%,25%{
+    visibility: visible;
+  }
+  26%,100%{
+    visibility: hidden;
+  }
+}
+
+@keyframes photo_two {
+  0%,26%{
+    visibility: hidden;
+  }
+  27%,50%{
+    visibility: visible;
+  }
+  100%{
+    visibility: hidden;
+  }
+}
+
+@keyframes photo_three {
+  0%,50%{
+    visibility: hidden;
+  }
+  51%,75%{
+    visibility: visible;
+  }
+  100%{
+    visibility: hidden;
+  }
+}
+
+@keyframes photo_four {
+  0%,75%{
+    visibility: hidden;
+  }
+  76%,100%{
+    visibility: visible;
+  }
+  /* 100%{
+    visibility: hidden;
+  } */
+}
+
+
+
+
+
