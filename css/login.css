@@ -94,7 +94,7 @@ body{
   position: relative;
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
+  width: 90%;
   height: 70%;
   gap: 15px;
   /* border: 1px solid #1cf300; */
@@ -138,12 +138,13 @@ body{
   outline: none;
   border: 1px solid #DBDBDB;
   width: 100%;
-  padding: 15px 20px;
+  padding: 10px 20px;
   border-radius: 4px;
 }
 
 .container .box_grid .box_content .box_form_login .border_form form .box_input input::placeholder{
   color: #737373;
+  font-size: .7rem;
 }
 
 .container .box_grid .box_content .box_form_login .border_form form .box_input button{
@@ -268,8 +269,8 @@ body{
 
 .container .box_grid .box_content .plataformas .box_img_plataformas .box{
   position: relative;
-  width: 150px;
-  height: 50px;
+  width: 120px;
+  height: 40px;
 }
 
   .container .box_grid .box_content .plataformas .box_img_plataformas .box img{
