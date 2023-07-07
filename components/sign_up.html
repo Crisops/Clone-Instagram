@@ -26,17 +26,21 @@
         </div>
         <form>
           <div class="box_input">
-            <input type="text" placeholder="Número de móvil o correo eléctronico">
+            <span>Número de móvil o correo eléctronico</span>
+            <input id="input_data" type="text" autocomplete="off">
           </div>
           <div class="box_input">
-            <input type="text" placeholder="Nombre completo">
+            <span>Nombre completo</span>
+            <input id="input_data" type="text" autocomplete="off">
           </div>
           <div class="box_input">
-            <input type="text" placeholder="Nombre de Usuario">
+            <span>Nombre de Usuario</span>
+            <input id="input_data" type="text" autocomplete="off">
           </div>
           <div class="box_input">
-            <span>Ocultar</span>
-            <input type="text" placeholder="Contaseña">
+            <span id="psd">Contraseña</span>
+            <span id="show">Ocultar</span>
+            <input id="input_data" class="password" type="text" autocomplete="off">
           </div>
           <div class="info_users">
             <p>Es posible que los usuarios de nuestro servicio hayan subido tu información de contacto en Instagram.
@@ -66,5 +70,6 @@
       </div>
     </div>
   </div>
+  <script src="../js/sign_up.js"></script>
 </body>
 </html>

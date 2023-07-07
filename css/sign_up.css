@@ -74,6 +74,13 @@ body{
   width: 100%;
 }
 
+
+.container_sign_up .grid_form_sign_form .box_content_main .box_social_network button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container_sign_up .grid_form_sign_form .box_content_main .box_social_network button{
   outline: none;
   border: none;
@@ -82,14 +89,18 @@ body{
   padding: 8px 20px;
   color: #fff;
   font-weight: 500;
-  border-radius: 5px;
+  border-radius: 8px;
   flex-grow: 1;
   cursor: pointer;
 }
 
+.container_sign_up .grid_form_sign_form .box_content_main .box_social_network button:hover{
+  background: #1877F2;
+}
+
 .container_sign_up .grid_form_sign_form .box_content_main .box_social_network button i{
-  margin-right: 3px;
-  font-size: 1rem;
+  margin-right: 5px;
+  font-size: 1.25rem;
 }
 
 
@@ -123,38 +134,75 @@ body{
   width: 100%;
 }
 
-.container_sign_up .grid_form_sign_form .box_content_main form .box_input:nth-child(4) span{
-  color: #262626;
-  position: absolute;
-  font-size: .78em;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  cursor: pointer;
-  transition: .2s ease;
-  font-weight: 500;
-}
-
-.container_sign_up .grid_form_sign_form .box_content_main form .box_input:nth-child(4) span:hover{
-  opacity: .5;
-}
-
 .container_sign_up .grid_form_sign_form .box_content_main form .box_input input{
   width: 100%;
   font-size: .7rem;
 }
 
-.container_sign_up .grid_form_sign_form .box_content_main form .box_input input::placeholder{
-  font-size: .8rem;
-}
-
-
 .container_sign_up .grid_form_sign_form .box_content_main form .box_input input{
   outline: none;
   border: 1px solid #DBDBDB;
-  padding: 12px 5px;
+  padding: 20px 60px 15px 8px;
   border-radius: 2px;
 }
+
+.container_sign_up .grid_form_sign_form .box_content_main form .box_input:nth-child(1) span,
+.container_sign_up .grid_form_sign_form .box_content_main form .box_input:nth-child(2) span,
+.container_sign_up .grid_form_sign_form .box_content_main form .box_input:nth-child(3) span{
+ position: absolute;
+ top: 50%;
+ left: 10px;
+ transform: translateY(-50%);
+ font-size: .8rem;
+ color: #73777C;
+ pointer-events: none;
+}
+
+.container_sign_up .grid_form_sign_form .box_content_main form .box_input:nth-child(1) span.top,
+.container_sign_up .grid_form_sign_form .box_content_main form .box_input:nth-child(2) span.top,
+.container_sign_up .grid_form_sign_form .box_content_main form .box_input:nth-child(3) span.top{
+  top: 10px;
+  font-size: .6rem;
+}
+
+
+.container_sign_up .grid_form_sign_form .box_content_main form .box_input:nth-child(4) span:nth-child(1){
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: .8rem;
+  color: #73777C;
+  pointer-events: none;
+}
+
+
+.container_sign_up .grid_form_sign_form .box_content_main form .box_input:nth-child(4) span:nth-child(1).top{
+  top: 10px;
+  font-size: .6rem;
+}
+
+
+/*Boton de ocultar contraseña*/
+.container_sign_up .grid_form_sign_form .box_content_main form .box_input:nth-child(4) span:nth-child(2){
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: .8rem;
+  font-weight: 600;
+  color: #2a2c2e;
+  cursor: pointer;
+}
+
+.container_sign_up .grid_form_sign_form .box_content_main form .box_input:nth-child(4) span:nth-child(2):hover{
+  opacity: .5;
+}
+/*Boton de ocultar contraseña*/
+
+
+
 
 .container_sign_up .grid_form_sign_form .box_content_main form .info_users,
 .container_sign_up .grid_form_sign_form .box_content_main form .info_terminos{
