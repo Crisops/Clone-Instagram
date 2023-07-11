@@ -13,7 +13,6 @@ body{
   background: #010409;
 }
 
-
 .box_aside_home_menu{
   position: fixed;
   top: 0;
@@ -156,3 +155,178 @@ body{
   background: rgba(38, 38, 38, .4);
   cursor: pointer;
 }
+
+.content_main{
+  position: relative;
+  margin-left: 250px;
+}
+
+.content_main .grid_main{
+  display: grid;
+  grid-template-columns: 1fr 40%;
+}
+
+.content_main .grid_main .suggestion{
+  width: 100%;
+  height: 100vh;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion{
+  margin-top: 40px;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion{
+  display: grid;
+  grid-template-rows: 80px 20px 230px 100px;
+  gap: 6px;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.profile{
+  display: grid;
+  grid-template-columns: 10% 25% 100px;
+  place-items: center;
+  gap: 15px;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.profile .box_img_profile{
+  position: relative;
+  width: 55px;
+  height: 55px;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.profile .box_img_profile img,
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.not_followers_friends .friends .box_img_profile img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.profile .info_profile,
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.not_followers_friends .friends .info_profile{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.profile .info_profile,
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.not_followers_friends .friends .info_profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.profile .info_profile span:nth-child(1),
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.not_followers_friends .friends .info_profile span:nth-child(1){
+  color: #fff;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.profile .info_profile span:nth-child(2){
+  color: #b3b3b3;
+  font-size: .9rem;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.profile button,
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.not_followers_friends .friends button{
+  background: none;
+  outline: none;
+  border: none;
+  color: #007DD0;
+  font-weight: 500;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.profile button:hover,
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.not_followers_friends .friends button:hover{
+ color: #fff;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.list{
+  width: calc(10% + 25% + 100px + 5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.list span{
+  color: #b3b3b3;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.list button{
+  border: none;
+  outline: none;
+  background: none;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.list button:hover{
+  color: #b3b3b3;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .not_followers_friends{
+  width: calc(10% + 25% + 100px + 5px);
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .not_followers_friends .friends{
+  display: grid;
+  grid-template-columns: max-content 1fr 50px;
+  place-items: center;
+  column-gap: 15px;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.not_followers_friends .friends .box_img_profile{
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestions_box.not_followers_friends .friends .info_profile span:nth-child(2){
+  color: #b3b3b3;
+  font-size: .7rem;
+}
+
+
+.content_main .grid_main .suggestion .profile_suggestion .suggestion_info_company{
+  display: flex;
+  align-items: center;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .box{
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  width: calc(10% + 25% + 100px + 5px);
+  row-gap: 15px;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .box div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .box div > a,
+.content_main .grid_main .suggestion .profile_suggestion .box div > span{
+  text-decoration: none;
+  font-size: .70rem;
+  color: #b3b3b3;
+}
+
+.content_main .grid_main .suggestion .profile_suggestion .box div > a:hover{
+  text-decoration: underline;
+}
+
+
+
