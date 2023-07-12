@@ -184,7 +184,8 @@ body{
   width: 100%;
   height: calc(100% - 40px);
   display: grid;
-  grid-template-rows: 10% 1fr;
+  grid-template-rows: max-content 1fr;
+  row-gap: 20px;
 }
 
 /*-----------Construción de historias instagram-----------*/
@@ -237,9 +238,11 @@ body{
 
 
 .content_main .grid_main main section .content_publications .box_publications article{
+  display: flex;
   position: relative;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  max-width: 480px;
   /* height: 800px; */
   /* background: red; */
   margin-bottom: 20px;
@@ -252,7 +255,7 @@ body{
 .content_main .grid_main main section .content_publications .box_publications article .publication{
   position: relative;
   display: grid;
-  grid-template-rows: max-content 70% 1fr;
+  grid-template-rows: max-content 1fr; /*La fila 3 crece implicitamente*/
   width: 85%;
   height: inherit;
   border-bottom: 1px solid #414141;
@@ -333,7 +336,8 @@ body{
   position: relative;
   display: block;
   width: 100%;
-  height: 100%;
+  padding-bottom: 125%;
+  /* height: 100%; */
   border-radius: 5px;
   overflow: hidden;
 }
@@ -427,7 +431,7 @@ body{
 
 .content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .make_comment{
   display: flex;
-  height: 100%;
+  height: 40px;
 }
 
 .content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .make_comment form{
@@ -450,33 +454,12 @@ body{
   font-size: .8rem;
   resize: none;
   color: #fff;
+  padding-right: 80px;
 }
 
 .content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .make_comment form .box_input textarea::placeholder{
   color: #666666;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .content_main .grid_main .suggestion{
@@ -644,7 +627,7 @@ body{
 
 @media screen and (min-width: 1500px){
   .content_main .grid_main main section .content_publications .box_publications article .publication{
-    grid-template-rows: max-content 65% 1fr;
+    grid-template-rows: max-content 1fr;
   }
   
 
