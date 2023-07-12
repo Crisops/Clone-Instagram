@@ -81,6 +81,12 @@ body{
   padding-left: 8px;
 }
 
+.box_aside_home_menu .box_menu nav ul li a{
+  text-decoration: none;
+  flex-grow: 1;
+}
+
+
 .box_aside_home_menu .box_menu nav ul li:hover{
   background: rgba(38, 38, 38, .4);
 }
@@ -92,7 +98,6 @@ body{
   flex-grow: 1;
 }
 
-
 .box_aside_home_menu .box_menu nav ul li .menu_item > span{
   align-self: center;
   color: #b3b3b3;
@@ -100,9 +105,12 @@ body{
   font-weight: 400;
 }
 
+
 .box_aside_home_menu .box_menu nav ul li .menu_item.active span{
   font-weight: 600;
 }
+
+
 
 .box_aside_home_menu .box_menu nav ul li .menu_item i{
   color: #fff;
@@ -233,6 +241,7 @@ body{
   display: flex;
   flex-direction: column;
   width: 58%;
+  gap: 20px;
   /* background: rgba(255, 255, 255, .2); */
 }
 
