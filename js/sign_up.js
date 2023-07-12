@@ -13,14 +13,7 @@ const animateSpanInput = (input) =>{
     input.parentElement.children[0].classList.remove("top");
   }
   
-  // (input.className === "password") ? $span_show.style.display = "block": $span_show.style.display = "none";
-  
-  // (input.classList.contains("password")) ? $span_show.style.display = "none": $span_show.style.display = "block";
 }
-
-// const showPassword = (input) =>{
- 
-// }
 
 
 d.addEventListener("click", (e) =>{

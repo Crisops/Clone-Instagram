@@ -8,6 +8,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html{
+  font-size: 16px;
+}
+
+
 body{
   min-height: 100vh;
   background: #010409;
@@ -156,6 +161,7 @@ body{
   cursor: pointer;
 }
 
+
 .content_main{
   position: relative;
   margin-left: 250px;
@@ -164,7 +170,314 @@ body{
 .content_main .grid_main{
   display: grid;
   grid-template-columns: 1fr 40%;
+  gap: 50px;
 }
+
+
+.content_main .grid_main main{
+  position: relative;
+}
+
+.content_main .grid_main main section{
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+  height: calc(100% - 40px);
+  display: grid;
+  grid-template-rows: 10% 1fr;
+}
+
+/*-----------Construción de historias instagram-----------*/
+
+.content_main .grid_main main section .reels{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.content_main .grid_main main section .reels .box_container_reels{
+  position: relative;
+  width: 70%;
+  max-width: 1000px;
+}
+
+.content_main .grid_main main section .reels .box_container_reels span{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+/*-------- Construción de historias instagram----------*/
+
+
+
+
+.content_main .grid_main main section .content_publications{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.content_main .grid_main main section .content_publications .box_publications{
+  display: flex;
+  flex-direction: column;
+  width: 58%;
+  /* background: rgba(255, 255, 255, .2); */
+}
+
+
+.content_main .grid_main main section .content_publications .box_publications article{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* height: 800px; */
+  /* background: red; */
+  margin-bottom: 20px;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article:nth-child(1){
+  margin-bottom: 20px;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication{
+  position: relative;
+  display: grid;
+  grid-template-rows: max-content 70% 1fr;
+  width: 85%;
+  height: inherit;
+  border-bottom: 1px solid #414141;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication header .profile{
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  flex-grow: 1;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication header .profile .box_img_profile{
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication header .profile .box_img_profile img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.content_main .grid_main main section .content_publications .box_publications article .publication header .profile .name_profile{
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  place-items: center;
+  padding-left: 10px;
+  column-gap: 6px;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication header .profile .name_profile span{
+  color: #8F8F8F;
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication header .profile .name_profile span:nth-child(1){
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication header .options_publications{
+  display: flex;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication header .options_publications button{
+  outline: none;
+  border: none;
+  background: none;
+  padding: 5px;
+  font-size: 1.02rem;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication header .options_publications button:hover{
+  color: #666666;
+}
+
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .post{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .post img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .reactions_post{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .reactions_post .reactions{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .reactions_post .reactions span,
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .save_post span{
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .reactions_post .reactions span i,
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .save_post span i{
+  font-weight: 100;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .reactions_post .reactions span i:hover,
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .save_post span i:hover{
+  color: #666666;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .likes_post{
+  display: flex;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .likes_post span{
+  font-size: .85rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .description_post{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .description_post p{
+  font-size: .8rem;
+  color: #fff;  
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .description_post p span{
+  font-size: .8rem;
+  color: #fff;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .comments_post{
+  display: flex;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .comments_post span{
+  color: #666666;
+  font-size: .8rem;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .comments_post span:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .make_comment{
+  display: flex;
+  height: 100%;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .make_comment form{
+  flex-grow: 1;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .make_comment form .box_input{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .make_comment form .box_input textarea{
+  position: absolute;
+  outline: none;
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: .8rem;
+  resize: none;
+  color: #fff;
+}
+
+.content_main .grid_main main section .content_publications .box_publications article .publication .interactivity .make_comment form .box_input textarea::placeholder{
+  color: #666666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .content_main .grid_main .suggestion{
   width: 100%;
@@ -183,7 +496,7 @@ body{
 
 .content_main .grid_main .suggestion .profile_suggestion .suggestions_box.profile{
   display: grid;
-  grid-template-columns: 10% 25% 100px;
+  grid-template-columns: max-content 25% 100px;
   place-items: center;
   gap: 15px;
 }
@@ -329,4 +642,10 @@ body{
 }
 
 
+@media screen and (min-width: 1500px){
+  .content_main .grid_main main section .content_publications .box_publications article .publication{
+    grid-template-rows: max-content 65% 1fr;
+  }
+  
 
+}
