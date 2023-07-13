@@ -131,14 +131,139 @@ body{
   border-radius: 50%;
 }
 
+.box_aside_home_menu .box_menu nav ul li .menu_item.active .user_profile img{
+  border: 2px inset #fff;
+}
+
 
 .box_aside_home_menu .options{
+  position: relative;
   display: flex;
   width: 100%;
   border-radius: 8px;
   transition: .5s;
   padding: 8px;
 }
+
+
+.box_aside_home_menu .options .more_options{
+  position: fixed;
+  width: 260px;
+  height: 400px;
+  bottom: 80px;
+  left: 20px;
+  border-radius: 8px;
+  background: #262626;
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+.box_aside_home_menu .options .more_options.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.box_aside_home_menu .options .more_options nav{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  cursor: auto;
+}
+
+.box_aside_home_menu .options .more_options nav .decoration{
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: #414141;
+}
+
+.box_aside_home_menu .options .more_options nav .option_account{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.box_aside_home_menu .options .more_options nav .option_account .change_account,
+.box_aside_home_menu .options .more_options nav .option_account .log_out{
+  padding: 15px;
+}
+
+.box_aside_home_menu .options .more_options nav .option_account .change_account span,
+.box_aside_home_menu .options .more_options nav .option_account .log_out span{ 
+  color: #cecece;
+  font-size: .9rem;
+}
+
+.box_aside_home_menu .options .more_options nav .option_account .change_account:hover,
+.box_aside_home_menu .options .more_options nav .option_account .log_out:hover{
+  background: #414141;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+.box_aside_home_menu .options .more_options nav .box_option_primary{
+  display: flex;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.box_aside_home_menu .options .more_options nav ul{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex-grow: 1;
+}
+
+.box_aside_home_menu .options .more_options nav ul li{
+  list-style: none;
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.box_aside_home_menu .options .more_options nav ul li:hover{
+  background: #414141;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.box_aside_home_menu .options .more_options nav ul li a{
+  text-decoration: none;
+}
+
+.box_aside_home_menu .options .more_options nav ul li a .select_option,
+.box_aside_home_menu .options .more_options nav ul li .select_option{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.box_aside_home_menu .options .more_options nav ul li a .select_option i,
+.box_aside_home_menu .options .more_options nav ul li .select_option i{
+  font-size: 1.2rem;
+}
+
+.box_aside_home_menu .options .more_options nav ul li a .select_option i,
+.box_aside_home_menu .options .more_options nav ul li a .select_option span,
+.box_aside_home_menu .options .more_options nav ul li .select_option i,
+.box_aside_home_menu .options .more_options nav ul li .select_option span{
+  color: #cecece;
+}
+
+.box_aside_home_menu .options .more_options nav ul li a .select_option span,
+.box_aside_home_menu .options .more_options nav ul li .select_option span{
+  font-size: .9rem;
+}
+
+
+
+
+
 
 .box_aside_home_menu .options .grid_options{
   display: grid;
@@ -434,7 +559,7 @@ body{
   flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 8px;
 }
