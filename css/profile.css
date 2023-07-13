@@ -174,7 +174,7 @@ body{
 .container_profile section{
   display: flex;
   width: calc(100% - 300px);
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .container_profile section main{
@@ -186,7 +186,8 @@ body{
 .container_profile section main .profile_data{
   display: block;
   width: calc(100% - 300px);
-  height: inherit;
+  /* height: inherit; */
+  margin-top: 30px;
 }
 
 .container_profile section main .profile_data .box_grid_profile{
@@ -195,7 +196,7 @@ body{
   height: 100%;
   display: grid;
   grid-template-rows: max-content max-content 1fr;
-  margin-top: 30px;
+  /* margin: 30px 0px; */
 }
 
 .container_profile section main .profile_data .box_grid_profile .header_profile{
@@ -414,6 +415,68 @@ body{
   object-fit: cover;
 }
 
+.container_profile .footer_info_company{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+}
+
+.container_profile .footer_info_company footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 300px);
+}
+
+.container_profile .footer_info_company footer .box_links_company{
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.container_profile .footer_info_company footer .box_links_company a{
+  text-decoration: none;
+  color: #A8A8A8;
+  font-size: .7rem;
+  padding: 5px 5px;
+}
+
+
+.container_profile .footer_info_company footer .box_links_company a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container_profile .footer_info_company footer .copyright{
+  flex-grow: 1;
+}
+
+.container_profile .footer_info_company footer .copyright{
+  flex-grow: 1;
+}
+
+.container_profile .footer_info_company footer .copyright select{
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+  color: #A8A8A8;
+  font-size: .7rem;
+}
+
+.container_profile .footer_info_company footer .copyright select option{
+  color: #000;
+}
+
+.container_profile .footer_info_company footer .copyright span{
+  color: #A8A8A8;
+  font-size: .7rem;
+}
 
 
 
