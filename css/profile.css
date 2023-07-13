@@ -180,7 +180,6 @@ body{
 .container_profile section main{
   display: flex;
   width: 100%;
-  height: inherit;
   justify-content: flex-end;
 }
 
@@ -196,11 +195,11 @@ body{
   height: 100%;
   display: grid;
   grid-template-rows: max-content max-content 1fr;
+  margin-top: 30px;
 }
 
 .container_profile section main .profile_data .box_grid_profile .header_profile{
   position: relative;
-  margin-top: 10px;
   display: grid;
   grid-template-columns: 32% 1fr;
   place-items: center;
@@ -338,6 +337,81 @@ body{
 .container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_description .presentation p{
   color: #fff;
   font-size: .8rem;
+}
+
+
+.container_profile section main .profile_data .box_grid_profile .btn_sections_profile{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #414141;
+}
+
+.container_profile section main .profile_data .box_grid_profile .btn_sections_profile .btn_box{
+  display: grid;
+  grid-template-columns:max-content 1fr;
+  place-items: center;
+  column-gap: 5px;
+}
+
+.container_profile section main .profile_data .box_grid_profile .btn_sections_profile .btn_box.active{
+  border-top: 1px solid #fff;
+}
+
+.container_profile section main .profile_data .box_grid_profile .btn_sections_profile .btn_box .btn{
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+
+.container_profile section main .profile_data .box_grid_profile .btn_sections_profile .btn_box i,
+.container_profile section main .profile_data .box_grid_profile .btn_sections_profile .btn_box .btn span{
+  color: #414141;
+  font-weight: 500;
+}
+
+.container_profile section main .profile_data .box_grid_profile .btn_sections_profile .btn_box i{
+  font-size: .75rem;
+}
+
+
+.container_profile section main .profile_data .box_grid_profile .btn_sections_profile .btn_box .btn span{
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+.container_profile section main .profile_data .box_grid_profile .btn_sections_profile .btn_box.active i,
+.container_profile section main .profile_data .box_grid_profile .btn_sections_profile .btn_box.active .btn span{
+  color: #fff;
+}
+
+
+.container_profile section main .profile_data .box_grid_profile .photos{
+  position: relative;
+  display: flex;
+}
+
+.container_profile section main .profile_data .box_grid_profile .photos .collage_photos{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 460px));
+  grid-auto-rows: minmax(200px, 340px);
+  gap: 4px;
+}
+
+.container_profile section main .profile_data .box_grid_profile .photos .collage_photos .box_publication_img{
+  position: relative;
+  overflow: hidden;
+}
+
+.container_profile section main .profile_data .box_grid_profile .photos .collage_photos .box_publication_img img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
