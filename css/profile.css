@@ -107,6 +107,7 @@ body{
 
 .box_aside_home_menu .box_menu nav ul li .menu_item.active span{
   font-weight: 600;
+  color: #fff;
 }
 
 .box_aside_home_menu .box_menu nav ul li .menu_item i{
@@ -165,4 +166,186 @@ body{
   background: rgba(38, 38, 38, .4);
   cursor: pointer;
 }
+
+.container_profile{
+  margin-left: 300px; 
+}
+
+.container_profile section{
+  display: flex;
+  width: calc(100% - 300px);
+  min-height: 100vh;
+}
+
+.container_profile section main{
+  display: flex;
+  width: 100%;
+  height: inherit;
+  justify-content: flex-end;
+}
+
+.container_profile section main .profile_data{
+  display: block;
+  width: calc(100% - 300px);
+  height: inherit;
+}
+
+.container_profile section main .profile_data .box_grid_profile{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content max-content 1fr;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile{
+  position: relative;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 32% 1fr;
+  place-items: center;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .box_img_profile{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .box_img_profile img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* height: 100%; */
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  /* height: 70%; */
+  /* background: yellow; */
+}
+
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_name{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  height: calc(100% / 3);
+  gap: 20px;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_name .name_and_edit_profile_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_name .name_and_edit_profile_box span{
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_name .name_and_edit_profile_box button{
+  outline: none;
+  border: none;
+  color: #000;
+  background: #EFEFEF;
+  font-family: 1.1rem;
+  padding: 8px 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_name .name_and_edit_profile_box button:hover{
+  background: #c5c5c5;
+}
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_name .box_settings{
+  display: flex;
+  gap: 10px;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_name .box_settings i{
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_activity{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  height: calc(100% / 3);
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_activity .box_numbers_activity{
+  display: flex;
+  gap: 5px;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_activity .box_numbers_activity span{
+  color: #fff;
+  font-size: 1rem;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_activity
+.box_numbers_activity span:nth-child(1){
+  font-weight: 600;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_description{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: calc(100% / 3);
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_description .name_profile{
+  flex-grow: 1;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_description .name_profile span{
+  color: #fff; 
+  font-size: .85rem;
+  font-weight: 500;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_description .presentation{
+  display: flex;
+}
+
+.container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_description .presentation p{
+  color: #fff;
+  font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
 
