@@ -10,6 +10,10 @@
 
 html{
   font-size: 16px;
+  --border: #414141;
+  --hv-bg: rgba(38, 38, 38, .4);
+  --color-letter: #A8A8A8;
+  --color-meta: #0095F6;
 }
 
 
@@ -26,6 +30,7 @@ body{
   height: 100vh;
   background: #0D1117;
   padding: 10px;
+  border-right: 1px solid var(--border);
 }
 
 .box_aside_home_menu header{
@@ -60,9 +65,6 @@ body{
 .box_aside_home_menu header .icon_instagram:hover i{
   transform: scale(1.05);
 }
-
-
-
 
 .box_aside_home_menu .box_menu{
   position: relative;
@@ -112,27 +114,13 @@ body{
 .box_aside_home_menu .box_menu nav ul li .menu_item:hover{
   padding: 8px;
   border-radius: 8px;
-  background: rgba(38, 38, 38, .4);
+  background: var(--hv-bg);
 }
 
 
 .box_aside_home_menu .box_menu nav ul li .menu_item:hover > i{
   transform: scale(1.05);
 }
-
-.box_aside_home_menu .box_menu nav ul li .menu_item > span{
-  align-self: center;
-  color: #b3b3b3;
-  font-size: .96rem;
-  font-weight: 400;
-}
-
-
-.box_aside_home_menu .box_menu nav ul li .menu_item.active span{
-  font-weight: 600;
-  color: #fff;
-}
-
 
 
 .box_aside_home_menu .box_menu nav ul li .menu_item i{
@@ -175,16 +163,199 @@ body{
   font-weight: 300;
 }
 
-.box_aside_home_menu .options .grid_options span{
-  align-self: center;
-}
-
-.box_aside_home_menu .options .grid_options span{
-  font-size: 1rem;
-  color: #b3b3b3;
-}
 
 .box_aside_home_menu .options:hover{
   background: rgba(38, 38, 38, .4);
   cursor: pointer;
 }
+.container_content_mensagges{
+  position: relative;
+  width: calc(100% - 70px);
+  height: 100vh;
+}
+
+.container_content_mensagges{
+  margin-left: 70px;
+}
+
+
+.container_content_mensagges .grid_inbox{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 22% 78%;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages{
+  display: grid;
+  grid-template-rows: 7% max-content 1fr;
+  border-right: 1px solid var(--border);
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .info_account_profile{
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .info_account_profile .name_profile{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .info_account_profile .name_profile span,
+.container_content_mensagges .grid_inbox .users_contact_messages .info_account_profile .name_profile i{
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .info_account_profile i{
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .option_selection_for_messages{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .option_selection_for_messages span{
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .option_selection_for_messages span:nth-child(2){
+  color: var(--color-letter);
+  cursor: pointer;
+}
+
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_scroll{
+  display: block;
+  overflow-y: scroll;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_scroll::-webkit-scrollbar{
+  background: var(--hv-bg);
+  width: 10px;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_scroll::-webkit-scrollbar-thumb{
+  background: var(--border);
+  border-radius: 30px;
+}
+
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_scroll .box_users_contact{
+  display: flex;
+  flex-direction: column;
+  height: 0;              /* No se porque me crea un error si le coloco tamaño a este contenedor*/
+  /* height: 850px; */
+  /* background: red; */
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat{
+  display: grid;
+  grid-auto-rows: 80px;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat:hover{
+  background: var(--hv-bg);
+  cursor: pointer;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat .box_info_chat{
+  position: relative;
+  display: grid;
+  grid-template-columns: 25% 1fr max-content;
+  grid-auto-rows: inherit;
+  gap: 10px;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat .box_info_chat .box_img{
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat .box_info_chat .box_img .img_profile_chat{
+  display: flex;
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat .box_info_chat .box_img .img_profile_chat img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat .box_info_chat .info_user_chat{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+}
+
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat .box_info_chat .info_user_chat .message{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat .box_info_chat .info_user_chat .message span{
+  font-size: .8rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat .box_info_chat .info_user_chat .message span:nth-child(2){
+  font-size: .75rem;
+  color: var(--color-letter);
+  font-weight: 400;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat .box_info_chat .info_user_chat .message span.not_seen{
+  font-size: .8rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat .box_info_chat .info_user_chat .current_time{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat .box_info_chat .info_user_chat .current_time span{
+  font-size: .8rem;
+  color: #fff;
+}
+
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat .box_info_chat .seen_message{
+  padding: 15px;
+  align-self: center;
+}
+
+.container_content_mensagges .grid_inbox .users_contact_messages .box_users_contact .chat .box_info_chat .seen_message span{
+  color: var(--color-meta);
+  font-size: 3rem;
+}
+
+

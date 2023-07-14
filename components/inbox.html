@@ -74,4 +74,53 @@
       </div>
     </div>
   </div>
+  <div class="container_content_mensagges">
+    <div class="grid_inbox">
+      <div class="users_contact_messages"> <!-- Grilla principal seleccion de chats de chats (3 filas)-->
+        <div class="info_account_profile"> <!-- Primer fila-->
+          <div class="name_profile">
+            <span>cris.alejo13</span>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <i class='bx bx-edit'></i>
+        </div>
+        <div class="option_selection_for_messages"> <!-- Segunda fila-->
+          <span>Mensajes</span>
+          <span>Solicitudes</span>
+        </div>
+        <div class="box_scroll">
+          <div class="box_users_contact"> <!-- Tercera fila-->
+            <div class="chat">
+              <div class="box_info_chat"> <!-- grilla columna de información del chat-->
+                <div class="box_img">
+                  <div class="img_profile_chat">
+                    <img src="../img/user.jpg" alt="">
+                  </div> 
+                </div>
+                <div class="info_user_chat"> <!-- Dos columnas para el mensaje-->
+                  <div class="message">
+                    <span id="chat_user">sr_andressz</span>
+                    <!-- La clase vacía de "message" tiene valor (not_seen) esto para saber si muestra un mensaje en caso de no haberlo leido-->
+                    <span id="message" class="">Última actividad hace 1 h</span> <!-- El mensaje que se muestre no puede ser tan largo-->
+                  </div>
+                  <!-- <div class="current_time"> Esto se activa al momento de que le lleguen mensajes al usuario y este no los haya leido
+                    <span>•</span>
+                    <span> 10 min</span>
+                  </div> -->
+                </div>
+                <!-- <div class="seen_message"> Se activa cuando le llegan mensajes al usuario que no haya leido
+                  <span id="seen">•</span>
+                </div>
+                -->
+              </div>
+            </div>
+          </div> 
+        </div>
+
+      </div>
+      <div class="box_messages_user">a</div>
+    </div>
+  </div>
+  <script src="../js/messages.js"></script>
 </body>
+</html>
