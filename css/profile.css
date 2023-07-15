@@ -582,9 +582,6 @@ body{
   flex-grow: 1;
 }
 
-.container_profile .footer_info_company footer .copyright{
-  flex-grow: 1;
-}
 
 .container_profile .footer_info_company footer .copyright select{
   border: none;
