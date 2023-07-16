@@ -24,6 +24,7 @@ body{
   top: 0;
   left: 0;
   width: 13%;
+  min-width: 200px;
   height: 100vh;
   background: #0D1117;
   padding: 20px 10px 10px 20px;
@@ -38,6 +39,10 @@ body{
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.box_aside_home_menu header i{
+  display: none;
 }
 
 .box_aside_home_menu header h1{
@@ -147,7 +152,7 @@ body{
 }
 
 
-.box_aside_home_menu .options .more_options{
+.more_options{
   position: fixed;
   width: 260px;
   height: 400px;
@@ -160,12 +165,12 @@ body{
 }
 
 
-.box_aside_home_menu .options .more_options.active{
+.more_options.active{
   visibility: visible;
   opacity: 1;
 }
 
-.box_aside_home_menu .options .more_options nav{
+.more_options nav{
   position: relative;
   display: flex;
   flex-direction: column;
@@ -173,47 +178,46 @@ body{
   cursor: auto;
 }
 
-.box_aside_home_menu .options .more_options nav .decoration{
+.more_options nav .decoration{
   position: relative;
   width: 100%;
   height: 5px;
   background: #414141;
 }
 
-.box_aside_home_menu .options .more_options nav .option_account{
+.more_options nav .option_account{
   position: relative;
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
 
-.box_aside_home_menu .options .more_options nav .option_account .change_account,
-.box_aside_home_menu .options .more_options nav .option_account .log_out{
+.more_options nav .option_account .change_account,
+.more_options nav .option_account .log_out{
   padding: 15px;
 }
 
-.box_aside_home_menu .options .more_options nav .option_account .change_account span,
-.box_aside_home_menu .options .more_options nav .option_account .log_out span{ 
+.more_options nav .option_account .change_account span,
+.more_options nav .option_account .log_out span{ 
   color: #cecece;
   font-size: .9rem;
 }
 
-.box_aside_home_menu .options .more_options nav .option_account .change_account:hover,
-.box_aside_home_menu .options .more_options nav .option_account .log_out:hover{
+.more_options nav .option_account .change_account:hover,
+.more_options nav .option_account .log_out:hover{
   background: #414141;
   border-radius: 8px;
   cursor: pointer;
 }
 
 
-
-.box_aside_home_menu .options .more_options nav .box_option_primary{
+.more_options nav .box_option_primary{
   display: flex;
   padding: 10px;
   flex-grow: 1;
 }
 
-.box_aside_home_menu .options .more_options nav ul{
+.more_options nav ul{
   position: relative;
   display: flex;
   flex-direction: column;
@@ -221,43 +225,43 @@ body{
   flex-grow: 1;
 }
 
-.box_aside_home_menu .options .more_options nav ul li{
+.more_options nav ul li{
   list-style: none;
   padding: 15px;
   flex-grow: 1;
 }
 
-.box_aside_home_menu .options .more_options nav ul li:hover{
+.more_options nav ul li:hover{
   background: #414141;
   border-radius: 8px;
   cursor: pointer;
 }
 
-.box_aside_home_menu .options .more_options nav ul li a{
+.more_options nav ul li a{
   text-decoration: none;
 }
 
-.box_aside_home_menu .options .more_options nav ul li a .select_option,
-.box_aside_home_menu .options .more_options nav ul li .select_option{
+.more_options nav ul li a .select_option,
+.more_options nav ul li .select_option{
   display: flex;
   gap: 8px;
   align-items: center;
 }
 
-.box_aside_home_menu .options .more_options nav ul li a .select_option i,
-.box_aside_home_menu .options .more_options nav ul li .select_option i{
+.more_options nav ul li a .select_option i,
+.more_options nav ul li .select_option i{
   font-size: 1.2rem;
 }
 
-.box_aside_home_menu .options .more_options nav ul li a .select_option i,
-.box_aside_home_menu .options .more_options nav ul li a .select_option span,
-.box_aside_home_menu .options .more_options nav ul li .select_option i,
-.box_aside_home_menu .options .more_options nav ul li .select_option span{
+.more_options nav ul li a .select_option i,
+.more_options nav ul li a .select_option span,
+.more_options nav ul li .select_option i,
+.more_options nav ul li .select_option span{
   color: #cecece;
 }
 
-.box_aside_home_menu .options .more_options nav ul li a .select_option span,
-.box_aside_home_menu .options .more_options nav ul li .select_option span{
+.more_options nav ul li a .select_option span,
+.more_options nav ul li .select_option span{
   font-size: .9rem;
 }
 
@@ -330,7 +334,7 @@ body{
   display: grid;
   grid-template-columns: 32% 1fr;
   place-items: center;
-  height: 100%;
+  /* height: 100%; */
   padding-bottom: 50px;
 }
 
@@ -372,18 +376,19 @@ body{
 .container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_name{
   position: relative;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  width: 45%;
+  /* width: 45%; */
   height: calc(100% / 3);
   gap: 20px;
 }
 
 .container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_name .name_and_edit_profile_box{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
+  gap: 20px;
 }
 
 .container_profile section main .profile_data .box_grid_profile .header_profile .info_profile_box .data_info_box .info_data_name .name_and_edit_profile_box span{
@@ -524,8 +529,8 @@ body{
 
 .container_profile section main .profile_data .box_grid_profile .photos .collage_photos{
   display: grid;
-  grid-template-columns: repeat(3, minmax(280px, 460px));
-  grid-auto-rows: minmax(200px, 340px);
+  grid-template-columns: repeat(3, minmax(280px, 310px));
+  grid-auto-rows: 310px;
   gap: 4px;
 }
 
@@ -546,7 +551,6 @@ body{
   justify-content: center;
   width: 100%;
   height: 100px;
-  margin-top: 30px;
 }
 
 .container_profile .footer_info_company footer{
@@ -599,6 +603,194 @@ body{
 .container_profile .footer_info_company footer .copyright span{
   color: #A8A8A8;
   font-size: .7rem;
+}
+
+
+
+@media screen and (max-width: 1750px){
+  
+  .container_profile {
+    margin-left: 230px;
+  }
+
+}
+
+
+@media screen and (max-width: 1600px){
+  
+  .container_profile {
+    margin-left: 200px;
+  }
+
+  .container_profile section {
+    display: flex;
+    width: initial;
+  }
+  .container_profile section main {
+    justify-content: center;
+  }
+
+  .container_profile section main .profile_data {
+    width: initial;
+  }
+
+}
+
+
+/* @media screen and (max-width: 1500px){
+  
+  .container_profile {
+    margin-left: 150px;
+  }
+
+} */
+
+
+/* @media screen and (max-width: 1400px){
+  
+  .container_profile {
+    margin-left: 70px;
+  }
+
+} */
+
+
+@media screen and (max-width: 1300px){
+  
+  .container_profile {
+    margin-left: 200px;
+  }
+
+  .container_profile section {
+    display: flex;
+    width: 100%;
+  }
+
+  .container_profile section main {
+    justify-content: center;
+  }
+
+  .container_profile section main .profile_data {
+    display: block;
+    width: initial;
+    /* height: inherit; */
+    margin-top: 30px;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1260px){
+
+  .container_profile {
+    margin-left: 70px;
+  }
+
+  .box_aside_home_menu {
+    width: auto;
+    min-width: auto;
+    max-width: 70px;
+    padding: 20px 10px 10px 10px;
+  }
+
+  .box_aside_home_menu header h1 {
+    display: none;
+  }
+
+  .box_aside_home_menu header{
+    justify-content: center;
+  }
+
+  .box_aside_home_menu header i {
+    display: block;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+
+  .box_aside_home_menu .box_menu nav ul {
+    align-items: center;
+  }
+
+  .box_aside_home_menu .box_menu nav ul li {
+    padding-left: 0;
+  }
+
+  .box_aside_home_menu .box_menu nav ul li .menu_item {
+    display: flex;
+  }
+
+  .box_aside_home_menu .box_menu nav ul li .menu_item span{
+    display: none;
+  }
+
+  .box_aside_home_menu .options .grid_options {
+    display: block;
+  }
+
+  .box_aside_home_menu .options .grid_options span {
+    display: none;
+  }
+
+  /*Popup de ver más opciones*/
+  .more_options {
+    position: fixed;
+    bottom: 21px;
+    left: 61px;
+    border-radius: 20px;
+    z-index: 1;
+  }
+
+  /*Popup de ver más opciones*/
+}
+
+@media screen and (max-width: 1050px){
+
+  .container_profile section {
+    padding: 25px 25px 0px 25px;
+  }
+
+  .container_profile section {
+    height: calc(100vh - 105px);
+  }
+
+  .container_profile section main .profile_data .box_grid_profile .photos .collage_photos{
+    grid-template-columns: repeat(3, minmax(calc(216px - 25px), 310px));
+    grid-auto-rows: 300px;
+  }
+
+  .container_profile .footer_info_company footer {
+    width: calc(100% - 70px);
+  }
+
+
+}
+
+@media screen and (max-width: 950px){
+
+
+  .container_profile section main .profile_data .box_grid_profile .photos .collage_photos{
+    grid-auto-rows: 273px;
+  }
+}
+
+
+@media screen and (max-width: 850px){
+
+  .container_profile section main .profile_data .box_grid_profile .photos .collage_photos{
+    grid-auto-rows: 240px;
+  }
+  
+}
+
+@media screen and (max-width: 800px){
+
+  .container_profile section main .profile_data .box_grid_profile .photos .collage_photos{
+    grid-auto-rows: 216px;
+  }
+  
 }
 
 
