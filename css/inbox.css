@@ -31,7 +31,7 @@ body{
   left: 0;
   width: max-content;
   height: 100vh;
-  background: #0D1117;
+  background: #06090e;
   padding: 10px;
   border-right: 1px solid var(--border);
 }
