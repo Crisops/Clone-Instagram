@@ -526,6 +526,7 @@ body{
 .container_profile section main .profile_data .box_grid_profile .photos{
   position: relative;
   display: flex;
+  overflow-y: scroll;
 }
 
 .container_profile section main .profile_data .box_grid_profile .photos .collage_photos{
@@ -728,7 +729,7 @@ body{
   }
 
   .container_profile section {
-    height: calc(100vh - 105px);
+    height: calc(100vh - 5vh);
   }
 
   .container_profile section main .profile_data .box_grid_profile .photos .collage_photos{
@@ -789,10 +790,10 @@ body{
     bottom: 0;
     max-width: none;
     width: 100%;
-    height: 4vh;
+    height: 5vh;
     z-index: 1;
     padding: 0; /*Se le quita el padding*/
-    border-top: 1px solid var(--border);
+    border-top: none;
   }
 
   .box_aside_home_menu header {
@@ -820,6 +821,16 @@ body{
   .box_aside_home_menu .box_menu nav ul li:nth-child(6){
     display: none;
   }
+
+  .box_aside_home_menu .box_menu nav ul li .menu_item i {
+    font-size: 1.5rem;
+  }
+
+  .box_aside_home_menu .box_menu nav ul li .menu_item .user_profile {
+    width: 25px;
+    height: 25px;
+  }
+
 
   .box_aside_home_menu .options {
     display: none;

@@ -705,10 +705,11 @@ body{
 
   .container_content_mensagges {
     width: 100%;
-    height: calc(100vh - 4vh);
+    /* height: calc(100vh - 4vh); */
   }
 
   .box_aside_home_menu {
+    display: none;
     top: auto;
     left: 0;
     bottom: 0;
