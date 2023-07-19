@@ -996,7 +996,7 @@ body{
 
   .container_profile section main .profile_data .box_grid_profile .header_profile .info_data_description .presentation{
     display: flex;
-    width: 100%;
+    max-width: 300px;
   }
 
   .container_profile section main .profile_data .box_grid_profile .header_profile .info_data_description .presentation p{
