@@ -634,6 +634,18 @@ body{
 
 /* -------------- MEDIA QUERY -----------------*/
 
+@media screen and (max-width: 1000px){
+
+  .container_content_mensagges .grid_inbox .users_contact_messages .info_account_profile {
+    padding: 0px 2px;
+  }
+
+  .container_content_mensagges .grid_inbox .users_contact_messages .box_scroll::-webkit-scrollbar{
+    width: 5px;
+  }  
+
+}
+
 @media screen and (max-width:900px){
   
 
