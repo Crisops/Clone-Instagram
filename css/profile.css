@@ -821,6 +821,14 @@ body{
     gap: 0; /*Se le quita el gap*/
   }
 
+  .box_aside_home_menu .box_menu nav ul li{
+    height: 0;
+  }
+
+  .box_aside_home_menu .box_menu nav ul li:hover{
+    background: none;
+  }
+
   .box_aside_home_menu .box_menu nav ul li:nth-child(2),
   .box_aside_home_menu .box_menu nav ul li:nth-child(6){
     display: none;

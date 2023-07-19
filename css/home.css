@@ -75,15 +75,15 @@ body{
 .box_aside_home_menu .box_menu nav ul{
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .box_aside_home_menu .box_menu nav ul li{
   list-style: none;
-  height: 50px;
   border-radius: 8px;
   transition: .5s;
   cursor: pointer;
+  padding: 8px;
 }
 
 .box_aside_home_menu .box_menu nav ul li{
@@ -692,10 +692,6 @@ body{
 
   .box_aside_home_menu .box_menu nav ul {
     align-items: center;
-  }
-
-  .box_aside_home_menu .box_menu nav ul li {
-    padding-left: 0;
   }
 
   .box_aside_home_menu .box_menu nav ul li .menu_item {
