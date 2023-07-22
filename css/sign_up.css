@@ -18,7 +18,8 @@ body{
 
 .container_sign_up{
   width: 18%;
-  height: 800px;
+  min-width: 350px;
+  height: 100%;
   /* border: 1px solid #DDDDDD; */
 }
 
@@ -47,7 +48,7 @@ body{
 .container_sign_up .grid_form_sign_form .box_content_main .tittle_sign h1{
   color: #000;
   font-family: 'Lobster Two', cursive;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 3rem;
 }
 
