@@ -50,7 +50,8 @@ body{
   display: none;
 }
 
-.box_aside_home_menu header h1{
+.box_aside_home_menu header a{
+  text-decoration: none;
   font-family: 'Lobster Two', cursive;
   font-weight: 500;
   font-size: 1.7rem;
@@ -192,19 +193,23 @@ body{
   padding: 10px;
 }
 
+.more_options nav .option_account a{
+  text-decoration: none;
+}
+
 .more_options nav .option_account .change_account,
-.more_options nav .option_account .log_out{
+.more_options nav .option_account a .log_out{
   padding: 15px;
 }
 
 .more_options nav .option_account .change_account span,
-.more_options nav .option_account .log_out span{ 
+.more_options nav .option_account a .log_out span{ 
   color: #cecece;
   font-size: .9rem;
 }
 
 .more_options nav .option_account .change_account:hover,
-.more_options nav .option_account .log_out:hover{
+.more_options nav .option_account a .log_out:hover{
   background: #414141;
   border-radius: 8px;
   cursor: pointer;

@@ -7,7 +7,7 @@ const $span_show = document.getElementById("show"); // Ocultar / Mostrar
 
 const animateSpanInput = (input) =>{
 
-  if (!input.value < 1 || !input.value === "") {
+  if (input.value.trim()) {
     input.parentElement.children[0].classList.add("top");
   }else{
     input.parentElement.children[0].classList.remove("top");
@@ -27,7 +27,7 @@ d.addEventListener("click", (e) =>{
 
   if (e.target.matches("#input_data")) {
     e.target.addEventListener("keyup", (e) =>{
-      if(e.target.value.length === 0 || e.target.value === ""){
+      if(!e.target.value.trim()){
         animateSpanInput(e.target);
       }else{
         animateSpanInput(e.target);

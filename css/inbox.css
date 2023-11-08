@@ -157,6 +157,123 @@ body{
   display: flex;
 }
 
+.more_options{
+  position: fixed;
+  width: 260px;
+  height: 400px;
+  bottom: 80px;
+  left: 20px;
+  border-radius: 8px;
+  background: #262626;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.more_options.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.more_options nav{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  cursor: auto;
+}
+
+.more_options nav .decoration{
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: #414141;
+}
+
+.more_options nav .option_account{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.more_options nav .option_account a{
+  text-decoration: none;
+}
+
+.more_options nav .option_account .change_account,
+.more_options nav .option_account a .log_out{
+  padding: 15px;
+}
+
+
+
+.more_options nav .option_account .change_account span,
+.more_options nav .option_account a .log_out span{ 
+  color: #cecece;
+  font-size: .9rem;
+}
+
+.more_options nav .option_account .change_account:hover,
+.more_options nav .option_account a .log_out:hover{
+  background: #414141;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.more_options nav .box_option_primary{
+  display: flex;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.more_options nav ul{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex-grow: 1;
+}
+
+.more_options nav ul li{
+  list-style: none;
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.more_options nav ul li:hover{
+  background: #414141;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.more_options nav ul li a{
+  text-decoration: none;
+}
+
+.more_options nav ul li a .select_option,
+.more_options nav ul li .select_option{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.more_options nav ul li a .select_option i,
+.more_options nav ul li .select_option i{
+  font-size: 1.2rem;
+}
+
+.more_options nav ul li a .select_option i,
+.more_options nav ul li a .select_option span,
+.more_options nav ul li .select_option i,
+.more_options nav ul li .select_option span{
+  color: #cecece;
+}
+
+.more_options nav ul li a .select_option span,
+.more_options nav ul li .select_option span{
+  font-size: .9rem;
+}
+
 .box_aside_home_menu .options .grid_options i{
   color: #fff;
   font-size: var(--font-size-icon-menu-aside);
