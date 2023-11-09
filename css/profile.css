@@ -681,7 +681,7 @@ body{
     padding: 20px 10px 10px 10px;
   }
 
-  .box_aside_home_menu header h1 {
+  .box_aside_home_menu header a {
     display: none;
   }
 
@@ -799,7 +799,7 @@ body{
     bottom: 0;
     max-width: none;
     width: 100%;
-    height: 5vh;
+    height: 6vh;
     z-index: 1;
     padding: 0; /*Se le quita el padding*/
     border-top: none;
@@ -815,37 +815,53 @@ body{
 
   .box_aside_home_menu .box_menu nav {
     margin-top: 0; /*Se le quita el margin*/
+    width: 100%;
+    height: 100%;
     align-self: center;
   }
 
   .box_aside_home_menu .box_menu nav ul {
     display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
     gap: 0; /*Se le quita el gap*/
-  }
-
-  .box_aside_home_menu .box_menu nav ul li{
-    height: 0;
   }
 
   .box_aside_home_menu .box_menu nav ul li:hover{
     background: none;
   }
 
-  .box_aside_home_menu .box_menu nav ul li:nth-child(2),
+  .box_aside_home_menu .box_menu nav ul li:nth-child(3),
+  .box_aside_home_menu .box_menu nav ul li:nth-child(4),
   .box_aside_home_menu .box_menu nav ul li:nth-child(6){
     display: none;
   }
 
+  .box_aside_home_menu .box_menu nav ul li {
+    padding-top: 8px;
+    align-items: start;
+  }
+
   .box_aside_home_menu .box_menu nav ul li .menu_item i {
-    font-size: 1.5rem;
+    font-size: 28px;
+  }
+
+  .box_aside_home_menu .box_menu nav ul li a .menu_item i {
+    font-size: 28px;
   }
 
   .box_aside_home_menu .box_menu nav ul li .menu_item .user_profile {
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .box_aside_home_menu .box_menu nav ul li .menu_item .user_profile img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
 
@@ -988,16 +1004,6 @@ body{
     font-size: .85rem;
     font-weight: 500;
   }
-
-  /* .container_profile section main .profile_data .box_grid_profile .header_profile .info_data_description .presentation{
-    display: flex;
-    width: 100%;
-  }
-
-  .container_profile section main .profile_data .box_grid_profile .header_profile .info_data_description .presentation p{
-    color: #fff;
-    font-size: .8rem;
-  } */
 
   .container_profile section main .profile_data .box_grid_profile .header_profile .info_data_description .presentation{
     display: flex;
